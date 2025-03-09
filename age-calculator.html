@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Tools Website</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="age-calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="calculator-container">
+            <h2>Age Calculator</h2>
+            <div class="calculator-card">
+                <div class="input-section">
+                    <div class="date-input">
+                        <label for="birthdate">Enter Your Birth Date:</label>
+                        <input type="date" id="birthdate" required>
+                    </div>
+                    <button id="calculate-btn">Calculate Age</button>
+                </div>
+                <div class="result-section" id="result" style="display: none;">
+                    <h3>Your Age is:</h3>
+                    <div class="result-grid">
+                        <div class="result-item years">
+                            <span class="value">--</span>
+                            <span class="label">Years</span>
+                        </div>
+                        <div class="result-item months">
+                            <span class="value">--</span>
+                            <span class="label">Months</span>
+                        </div>
+                        <div class="result-item days">
+                            <span class="value">--</span>
+                            <span class="label">Days</span>
+                        </div>
+                    </div>
+                    <div class="detailed-results">
+                        <div class="detail-item">
+                            <span class="label">Total Months:</span>
+                            <span class="value" id="total-months">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Total Weeks:</span>
+                            <span class="value" id="total-weeks">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Total Days:</span>
+                            <span class="value" id="total-days">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Total Hours:</span>
+                            <span class="value" id="total-hours">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Total Minutes:</span>
+                            <span class="value" id="total-minutes">--</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Total Seconds:</span>
+                            <span class="value" id="total-seconds">--</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Information Section -->
+                    <div class="additional-info">
+                        <h3>Additional Information</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <span class="label">Next Birthday</span>
+                                <span class="value" id="next-birthday">--</span>
+                                <span class="sub-value" id="days-to-birthday">--</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-day"></i>
+                                <span class="label">Day of Birth</span>
+                                <span class="value" id="birth-day">--</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-star"></i>
+                                <span class="label">Zodiac Sign</span>
+                                <span class="value" id="zodiac-sign">--</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-dragon"></i>
+                                <span class="label">Chinese Zodiac</span>
+                                <span class="value" id="chinese-zodiac">--</span>
+                            </div>
+                        </div>
+                        
+                        <div class="fun-facts">
+                            <h4>Fun Facts About Your Life</h4>
+                            <ul id="fun-facts-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../../script.js"></script>
+    <script src="age-calculator.js"></script>
+</body>
+</html>
